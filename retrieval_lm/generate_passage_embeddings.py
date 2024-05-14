@@ -102,6 +102,8 @@ if __name__ == "__main__":
 
     parser.add_argument("--passages", type=str, default=None, help="Path to passages (.tsv file)")
     parser.add_argument("--output_dir", type=str, default="wikipedia_embeddings", help="dir path to save embeddings")
+    print("Model path:", model_path)
+    print("Args model_name_or_path:", args.model_name_or_path)
     parser.add_argument("--prefix", type=str, default="passages", help="prefix path to save embeddings")
     parser.add_argument("--shard_id", type=int, default=0, help="Id of the current shard")
     parser.add_argument("--num_shards", type=int, default=1, help="Total number of shards")
